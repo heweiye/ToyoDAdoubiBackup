@@ -46,7 +46,7 @@ copy to https://github.com/ToyoDAdoubiBackup
   * [ssrstatus.sh](#ssrstatussh)
   * [ssr_check.sh](#ssr_checksh)
   * [ssr_ip_check.sh](#ssr_ip_checksh)
-
+  * [wireguard_install_centos7](#wireguard_install_centos7)
 ---
 
 ## 代理相关
@@ -505,6 +505,23 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/pipesocks/insta
 ``` bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/heweiye/ToyoDAdoubiBackup/master/gogo.sh && chmod +x gogo.sh && bash gogo.sh
 ```
+---
+## wireguard_install_centos7
+
+- 脚本说明: wireguard_install_centos7
+- 系统支持: CentOS7不支持OVZ
+- 使用方法: https://www.atrandys.com/2018/886.html
+
+#### 下载安装:
+``` bash
+yum install -y wget && wget https://raw.githubusercontent.com/yobabyshark/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
+```
+fork版本
+``` bash
+yum install -y wget && wget https://raw.githubusercontent.com/heweiye/ToyoDAdoubiBackup/master/wireguard_install_centos7.sh && chmod +x wireguard_install_centos7.sh && ./wireguard_install_centos7.sh
+```
+使用xftp等ftp工具连接vps，进入/etc/wireguard/目录，然后将client.conf下载到本地电脑
+
 
 ---
 Copyright (C) 2016-2018 Toyo <https://doub.io>
