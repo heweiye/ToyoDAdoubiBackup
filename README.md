@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/heweiye/ToyoDAdoubiBackup.svg?style=popout&label=Stars)](https://github.com/heweiye/ToyoDAdoubiBackup/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/heweiye/ToyoDAdoubiBackup.svg?style=popout&label=Fork)](https://github.com/heweiye/ToyoDAdoubiBackup/fork)
 
-copy to https://github.com/heweiye/ToyoDAdoubiBackup/
+copy to https://github.com/ToyoDAdoubiBackup
 ## 脚本索引
 
 * [***代理相关***](#代理相关)
