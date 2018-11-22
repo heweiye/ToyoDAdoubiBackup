@@ -46,6 +46,7 @@ copy to https://github.com/ToyoDAdoubiBackup
   * [ssrstatus.sh](#ssrstatussh)
   * [ssr_check.sh](#ssr_checksh)
   * [ssr_ip_check.sh](#ssr_ip_checksh)
+  * [LotServer.sh](#LotServer.sh)
   * [wireguard_install_centos7](#wireguard_install_centos7)
 ---
 
@@ -522,6 +523,29 @@ yum install -y wget && wget https://raw.githubusercontent.com/heweiye/ToyoDAdoub
 ```
 使用xftp等ftp工具连接vps，进入/etc/wireguard/目录，然后将client.conf下载到本地电脑
 
+## LotServer.sh
+
+安装LotServer
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'install'
+
+卸载LotServer
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'uninstall'
+
+
+/appex/bin/serverSpeeder.sh start
+# 启动 LotServer
+ 
+/appex/bin/serverSpeeder.sh stop
+# 停止 LotServer
+ 
+/appex/bin/serverSpeeder.sh restart
+# 重启 LotServer
+ 
+/appex/bin/serverSpeeder.sh status
+# 状态查询
+ 
+/appex/bin/serverSpeeder.sh renewLic
+# 更新许可
 
 ---
 Copyright (C) 2016-2018 Toyo <https://doub.io>
