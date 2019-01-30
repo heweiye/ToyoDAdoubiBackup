@@ -301,7 +301,7 @@ Set_aria2_RPC_port(){
 		else
 			sed -i 's/^rpc-listen-port='${aria2_port}'/rpc-listen-port='${aria2_RPC_port}'/g' ${aria2_conf}
 			if [[ $? -eq 0 ]];then
-				echo -e "${Info} 端口修改成功！新密码为：${Green_font_prefix}${aria2_RPC_port}${Font_color_suffix}"
+				echo -e "${Info} 端口修改成功！新端口为：${Green_font_prefix}${aria2_RPC_port}${Font_color_suffix}"
 				Del_iptables
 				Add_iptables
 				Save_iptables
@@ -309,7 +309,7 @@ Set_aria2_RPC_port(){
 					Restart_aria2
 				fi
 			else 
-				echo -e "${Error} 端口修改失败！旧密码为：${Green_font_prefix}${aria2_port}${Font_color_suffix}"
+				echo -e "${Error} 端口修改失败！旧端口为：${Green_font_prefix}${aria2_port}${Font_color_suffix}"
 			fi
 		fi
 	else
